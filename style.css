@@ -126,3 +126,20 @@ text-transform: uppercase;
 .modal-content>img{
   max-width: 200px;
 }
+
+#refresh,.mdl-button{
+  outline: none;
+}
+.refresh_button{
+  padding: 20px;
+  font-family: 'Mulish', sans-serif;
+  background-image: linear-gradient(20deg, #3CBEF7,#5F5FFE, #C969F8);
+  font-size: 24px;
+  color: #FFF;
+}
+.refresh_button>.material-icons{
+  vertical-align: middle;
+  font-size: 24px;
+  margin-right: 5px;
+
+}
