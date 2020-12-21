@@ -1,7 +1,8 @@
-  var imageKeyword="";
+  var countryName="";
   var countries=[];
   var random_country="";
   var numberOfCountries = "";
+
 
     function getCodes(){
 
@@ -48,6 +49,8 @@ request.send()
     console.log(data);
 
     $(".flag_name").html("<img id='clipart_image'src='"+data.flag+"'>"+"<br>"+data.name);
+
+    countryName = data.name;
 
     if(data.gini==null||data.gini=="-"){
         var gini_index="N/A";
@@ -119,7 +122,8 @@ request.send()
 
     }
 
-    $('.root').append("Total - "+countOfStates);
+    $('.root').append("Total - "+countOfStates+"<br>"+"<hr>");
+    $('.root').append("<a target='_blank' href='https://en.wikipedia.org/wiki/"+countryName+"'"+">Know more on wikipedia</a>");
 
 }
 
